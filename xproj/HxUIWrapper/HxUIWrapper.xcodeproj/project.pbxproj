@@ -1,0 +1,603 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		416F4DF91A28A30900FD5A6B /* AppDelegate.mm in Sources */ = {isa = PBXBuildFile; fileRef = 416F4DF81A28A30900FD5A6B /* AppDelegate.mm */; };
+		416F4DFB1A28A30900FD5A6B /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 416F4DFA1A28A30900FD5A6B /* main.m */; };
+		416F4DFD1A28A30900FD5A6B /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 416F4DFC1A28A30900FD5A6B /* Images.xcassets */; };
+		416F4E001A28A30900FD5A6B /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 416F4DFE1A28A30900FD5A6B /* MainMenu.xib */; };
+		416F4E0C1A28A30A00FD5A6B /* HxUIWrapperTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 416F4E0B1A28A30A00FD5A6B /* HxUIWrapperTests.m */; };
+		416F4E161A28A35300FD5A6B /* HxModule.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 416F4E151A28A35300FD5A6B /* HxModule.a */; };
+		416F4E4C1A28AAA000FD5A6B /* DynamicImpl.tpl in Resources */ = {isa = PBXBuildFile; fileRef = 416F4E341A28AAA000FD5A6B /* DynamicImpl.tpl */; };
+		416F4E4D1A28AAA000FD5A6B /* GenMacro.hx in Resources */ = {isa = PBXBuildFile; fileRef = 416F4E3A1A28AAA000FD5A6B /* GenMacro.hx */; };
+		416F4E4E1A28AAA000FD5A6B /* Macros.tpl in Resources */ = {isa = PBXBuildFile; fileRef = 416F4E3E1A28AAA000FD5A6B /* Macros.tpl */; };
+		416F4E541A28BC6400FD5A6B /* libstdc++.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 416F4E511A28BC6400FD5A6B /* libstdc++.dylib */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		416F4E061A28A30A00FD5A6B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 416F4DEA1A28A30900FD5A6B /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 416F4DF11A28A30900FD5A6B;
+			remoteInfo = HxUIWrapper;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		4130B9431A2E31DC00BD2411 /* Eof.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Eof.h; sourceTree = "<group>"; };
+		4130B9441A2E31DC00BD2411 /* HxModule.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HxModule.h; sourceTree = "<group>"; };
+		4130B9451A2E31DC00BD2411 /* Std.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Std.h; sourceTree = "<group>"; };
+		4130B9461A2E31DC00BD2411 /* Sys.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Sys.h; sourceTree = "<group>"; };
+		416F4DF21A28A30900FD5A6B /* HxUIWrapper.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HxUIWrapper.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		416F4DF61A28A30900FD5A6B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		416F4DF71A28A30900FD5A6B /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		416F4DF81A28A30900FD5A6B /* AppDelegate.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = AppDelegate.mm; sourceTree = "<group>"; };
+		416F4DFA1A28A30900FD5A6B /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		416F4DFC1A28A30900FD5A6B /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		416F4DFF1A28A30900FD5A6B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/MainMenu.xib; sourceTree = "<group>"; };
+		416F4E051A28A30A00FD5A6B /* HxUIWrapperTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = HxUIWrapperTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		416F4E0A1A28A30A00FD5A6B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		416F4E0B1A28A30A00FD5A6B /* HxUIWrapperTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HxUIWrapperTests.m; sourceTree = "<group>"; };
+		416F4E151A28A35300FD5A6B /* HxModule.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = HxModule.a; path = ../../hx/out/cpp/module/HxModule.a; sourceTree = "<group>"; };
+		416F4E211A28AA9F00FD5A6B /* Array.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.h; fileEncoding = 4; path = Array.h; sourceTree = "<group>"; };
+		416F4E221A28AA9F00FD5A6B /* Class.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.h; fileEncoding = 4; path = Class.h; sourceTree = "<group>"; };
+		416F4E241A28AA9F00FD5A6B /* CppInt32__.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.h; fileEncoding = 4; path = CppInt32__.h; sourceTree = "<group>"; };
+		416F4E251A28AA9F00FD5A6B /* FastIterator.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.h; fileEncoding = 4; path = FastIterator.h; sourceTree = "<group>"; };
+		416F4E261A28AA9F00FD5A6B /* Pointer.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.h; fileEncoding = 4; path = Pointer.h; sourceTree = "<group>"; };
+		416F4E271A28AA9F00FD5A6B /* Dynamic.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.h; fileEncoding = 4; path = Dynamic.h; sourceTree = "<group>"; };
+		416F4E281A28AA9F00FD5A6B /* Enum.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.h; fileEncoding = 4; path = Enum.h; sourceTree = "<group>"; };
+		416F4E2C1A28AAA000FD5A6B /* Anon.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.h; fileEncoding = 4; path = Anon.h; sourceTree = "<group>"; };
+		416F4E2D1A28AAA000FD5A6B /* Boot.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.h; fileEncoding = 4; path = Boot.h; sourceTree = "<group>"; };
+		416F4E2E1A28AAA000FD5A6B /* CFFI.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.h; fileEncoding = 4; path = CFFI.h; sourceTree = "<group>"; };
+		416F4E2F1A28AAA000FD5A6B /* CFFIAPI.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.h; fileEncoding = 4; path = CFFIAPI.h; sourceTree = "<group>"; };
+		416F4E301A28AAA000FD5A6B /* CFFILoader.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.h; fileEncoding = 4; path = CFFILoader.h; sourceTree = "<group>"; };
+		416F4E311A28AAA000FD5A6B /* CFFIPrime.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.h; fileEncoding = 4; path = CFFIPrime.h; sourceTree = "<group>"; };
+		416F4E321A28AAA000FD5A6B /* Debug.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.h; fileEncoding = 4; path = Debug.h; sourceTree = "<group>"; };
+		416F4E331A28AAA000FD5A6B /* DynamicImpl.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.h; fileEncoding = 4; path = DynamicImpl.h; sourceTree = "<group>"; };
+		416F4E341A28AAA000FD5A6B /* DynamicImpl.tpl */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = DynamicImpl.tpl; sourceTree = "<group>"; };
+		416F4E351A28AAA000FD5A6B /* ErrorCodes.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.h; fileEncoding = 4; path = ErrorCodes.h; sourceTree = "<group>"; };
+		416F4E361A28AAA000FD5A6B /* FieldRef.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.h; fileEncoding = 4; path = FieldRef.h; sourceTree = "<group>"; };
+		416F4E371A28AAA000FD5A6B /* Functions.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.h; fileEncoding = 4; path = Functions.h; sourceTree = "<group>"; };
+		416F4E381A28AAA000FD5A6B /* GC.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.h; fileEncoding = 4; path = GC.h; sourceTree = "<group>"; };
+		416F4E391A28AAA000FD5A6B /* GCTemplates.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.h; fileEncoding = 4; path = GCTemplates.h; sourceTree = "<group>"; };
+		416F4E3A1A28AAA000FD5A6B /* GenMacro.hx */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = GenMacro.hx; sourceTree = "<group>"; };
+		416F4E3B1A28AAA000FD5A6B /* IndexRef.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.h; fileEncoding = 4; path = IndexRef.h; sourceTree = "<group>"; };
+		416F4E3C1A28AAA000FD5A6B /* Interface.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.h; fileEncoding = 4; path = Interface.h; sourceTree = "<group>"; };
+		416F4E3D1A28AAA000FD5A6B /* Macros.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.h; fileEncoding = 4; path = Macros.h; sourceTree = "<group>"; };
+		416F4E3E1A28AAA000FD5A6B /* Macros.tpl */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Macros.tpl; sourceTree = "<group>"; };
+		416F4E3F1A28AAA000FD5A6B /* NekoFunc.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.h; fileEncoding = 4; path = NekoFunc.h; sourceTree = "<group>"; };
+		416F4E401A28AAA000FD5A6B /* Object.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.h; fileEncoding = 4; path = Object.h; sourceTree = "<group>"; };
+		416F4E411A28AAA000FD5A6B /* Operators.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.h; fileEncoding = 4; path = Operators.h; sourceTree = "<group>"; };
+		416F4E421A28AAA000FD5A6B /* OS.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.h; fileEncoding = 4; path = OS.h; sourceTree = "<group>"; };
+		416F4E431A28AAA000FD5A6B /* Scriptable.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.h; fileEncoding = 4; path = Scriptable.h; sourceTree = "<group>"; };
+		416F4E441A28AAA000FD5A6B /* StdLibs.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.h; fileEncoding = 4; path = StdLibs.h; sourceTree = "<group>"; };
+		416F4E451A28AAA000FD5A6B /* Thread.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.h; fileEncoding = 4; path = Thread.h; sourceTree = "<group>"; };
+		416F4E461A28AAA000FD5A6B /* Undefine.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.h; fileEncoding = 4; path = Undefine.h; sourceTree = "<group>"; };
+		416F4E471A28AAA000FD5A6B /* hxcpp.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.h; fileEncoding = 4; path = hxcpp.h; sourceTree = "<group>"; };
+		416F4E481A28AAA000FD5A6B /* hxMath.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.h; fileEncoding = 4; path = hxMath.h; sourceTree = "<group>"; };
+		416F4E491A28AAA000FD5A6B /* hxString.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.h; fileEncoding = 4; path = hxString.h; sourceTree = "<group>"; };
+		416F4E4A1A28AAA000FD5A6B /* null.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.h; fileEncoding = 4; path = null.h; sourceTree = "<group>"; };
+		416F4E511A28BC6400FD5A6B /* libstdc++.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = "libstdc++.dylib"; path = "usr/lib/libstdc++.dylib"; sourceTree = SDKROOT; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		416F4DEF1A28A30900FD5A6B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				416F4E541A28BC6400FD5A6B /* libstdc++.dylib in Frameworks */,
+				416F4E161A28A35300FD5A6B /* HxModule.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		416F4E021A28A30A00FD5A6B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		4130B9401A2E31DC00BD2411 /* hx-include */ = {
+			isa = PBXGroup;
+			children = (
+				4130B9411A2E31DC00BD2411 /* haxe */,
+				4130B9441A2E31DC00BD2411 /* HxModule.h */,
+				4130B9451A2E31DC00BD2411 /* Std.h */,
+				4130B9461A2E31DC00BD2411 /* Sys.h */,
+			);
+			name = "hx-include";
+			path = ../../hx/out/cpp/module/include;
+			sourceTree = "<group>";
+		};
+		4130B9411A2E31DC00BD2411 /* haxe */ = {
+			isa = PBXGroup;
+			children = (
+				4130B9421A2E31DC00BD2411 /* io */,
+			);
+			path = haxe;
+			sourceTree = "<group>";
+		};
+		4130B9421A2E31DC00BD2411 /* io */ = {
+			isa = PBXGroup;
+			children = (
+				4130B9431A2E31DC00BD2411 /* Eof.h */,
+			);
+			path = io;
+			sourceTree = "<group>";
+		};
+		4130B9471A2E3F7800BD2411 /* c++ */ = {
+			isa = PBXGroup;
+			children = (
+				416F4E151A28A35300FD5A6B /* HxModule.a */,
+				4130B9401A2E31DC00BD2411 /* hx-include */,
+				416F4E201A28AA9F00FD5A6B /* hxcpp-include */,
+				416F4E511A28BC6400FD5A6B /* libstdc++.dylib */,
+			);
+			name = "c++";
+			sourceTree = "<group>";
+		};
+		416F4DE91A28A30900FD5A6B = {
+			isa = PBXGroup;
+			children = (
+				4130B9471A2E3F7800BD2411 /* c++ */,
+				416F4DF41A28A30900FD5A6B /* HxUIWrapper */,
+				416F4E081A28A30A00FD5A6B /* HxUIWrapperTests */,
+				416F4DF31A28A30900FD5A6B /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		416F4DF31A28A30900FD5A6B /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				416F4DF21A28A30900FD5A6B /* HxUIWrapper.app */,
+				416F4E051A28A30A00FD5A6B /* HxUIWrapperTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		416F4DF41A28A30900FD5A6B /* HxUIWrapper */ = {
+			isa = PBXGroup;
+			children = (
+				416F4DF71A28A30900FD5A6B /* AppDelegate.h */,
+				416F4DF81A28A30900FD5A6B /* AppDelegate.mm */,
+				416F4DFC1A28A30900FD5A6B /* Images.xcassets */,
+				416F4DFE1A28A30900FD5A6B /* MainMenu.xib */,
+				416F4DF51A28A30900FD5A6B /* Supporting Files */,
+			);
+			path = HxUIWrapper;
+			sourceTree = "<group>";
+		};
+		416F4DF51A28A30900FD5A6B /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				416F4DF61A28A30900FD5A6B /* Info.plist */,
+				416F4DFA1A28A30900FD5A6B /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		416F4E081A28A30A00FD5A6B /* HxUIWrapperTests */ = {
+			isa = PBXGroup;
+			children = (
+				416F4E0B1A28A30A00FD5A6B /* HxUIWrapperTests.m */,
+				416F4E091A28A30A00FD5A6B /* Supporting Files */,
+			);
+			path = HxUIWrapperTests;
+			sourceTree = "<group>";
+		};
+		416F4E091A28A30A00FD5A6B /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				416F4E0A1A28A30A00FD5A6B /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		416F4E201A28AA9F00FD5A6B /* hxcpp-include */ = {
+			isa = PBXGroup;
+			children = (
+				416F4E211A28AA9F00FD5A6B /* Array.h */,
+				416F4E221A28AA9F00FD5A6B /* Class.h */,
+				416F4E231A28AA9F00FD5A6B /* cpp */,
+				416F4E271A28AA9F00FD5A6B /* Dynamic.h */,
+				416F4E281A28AA9F00FD5A6B /* Enum.h */,
+				416F4E291A28AA9F00FD5A6B /* extern */,
+				416F4E2B1A28AAA000FD5A6B /* hx */,
+				416F4E471A28AAA000FD5A6B /* hxcpp.h */,
+				416F4E481A28AAA000FD5A6B /* hxMath.h */,
+				416F4E491A28AAA000FD5A6B /* hxString.h */,
+				416F4E4A1A28AAA000FD5A6B /* null.h */,
+			);
+			name = "hxcpp-include";
+			path = ../../../../Haxe/libs/hxcpp/git/include;
+			sourceTree = "<group>";
+		};
+		416F4E231A28AA9F00FD5A6B /* cpp */ = {
+			isa = PBXGroup;
+			children = (
+				416F4E241A28AA9F00FD5A6B /* CppInt32__.h */,
+				416F4E251A28AA9F00FD5A6B /* FastIterator.h */,
+				416F4E261A28AA9F00FD5A6B /* Pointer.h */,
+			);
+			path = cpp;
+			sourceTree = "<group>";
+		};
+		416F4E291A28AA9F00FD5A6B /* extern */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = extern;
+			sourceTree = "<group>";
+		};
+		416F4E2B1A28AAA000FD5A6B /* hx */ = {
+			isa = PBXGroup;
+			children = (
+				416F4E2C1A28AAA000FD5A6B /* Anon.h */,
+				416F4E2D1A28AAA000FD5A6B /* Boot.h */,
+				416F4E2E1A28AAA000FD5A6B /* CFFI.h */,
+				416F4E2F1A28AAA000FD5A6B /* CFFIAPI.h */,
+				416F4E301A28AAA000FD5A6B /* CFFILoader.h */,
+				416F4E311A28AAA000FD5A6B /* CFFIPrime.h */,
+				416F4E321A28AAA000FD5A6B /* Debug.h */,
+				416F4E331A28AAA000FD5A6B /* DynamicImpl.h */,
+				416F4E341A28AAA000FD5A6B /* DynamicImpl.tpl */,
+				416F4E351A28AAA000FD5A6B /* ErrorCodes.h */,
+				416F4E361A28AAA000FD5A6B /* FieldRef.h */,
+				416F4E371A28AAA000FD5A6B /* Functions.h */,
+				416F4E381A28AAA000FD5A6B /* GC.h */,
+				416F4E391A28AAA000FD5A6B /* GCTemplates.h */,
+				416F4E3A1A28AAA000FD5A6B /* GenMacro.hx */,
+				416F4E3B1A28AAA000FD5A6B /* IndexRef.h */,
+				416F4E3C1A28AAA000FD5A6B /* Interface.h */,
+				416F4E3D1A28AAA000FD5A6B /* Macros.h */,
+				416F4E3E1A28AAA000FD5A6B /* Macros.tpl */,
+				416F4E3F1A28AAA000FD5A6B /* NekoFunc.h */,
+				416F4E401A28AAA000FD5A6B /* Object.h */,
+				416F4E411A28AAA000FD5A6B /* Operators.h */,
+				416F4E421A28AAA000FD5A6B /* OS.h */,
+				416F4E431A28AAA000FD5A6B /* Scriptable.h */,
+				416F4E441A28AAA000FD5A6B /* StdLibs.h */,
+				416F4E451A28AAA000FD5A6B /* Thread.h */,
+				416F4E461A28AAA000FD5A6B /* Undefine.h */,
+			);
+			path = hx;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		416F4DF11A28A30900FD5A6B /* HxUIWrapper */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 416F4E0F1A28A30A00FD5A6B /* Build configuration list for PBXNativeTarget "HxUIWrapper" */;
+			buildPhases = (
+				416F4DEE1A28A30900FD5A6B /* Sources */,
+				416F4DEF1A28A30900FD5A6B /* Frameworks */,
+				416F4DF01A28A30900FD5A6B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = HxUIWrapper;
+			productName = HxUIWrapper;
+			productReference = 416F4DF21A28A30900FD5A6B /* HxUIWrapper.app */;
+			productType = "com.apple.product-type.application";
+		};
+		416F4E041A28A30A00FD5A6B /* HxUIWrapperTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 416F4E121A28A30A00FD5A6B /* Build configuration list for PBXNativeTarget "HxUIWrapperTests" */;
+			buildPhases = (
+				416F4E011A28A30A00FD5A6B /* Sources */,
+				416F4E021A28A30A00FD5A6B /* Frameworks */,
+				416F4E031A28A30A00FD5A6B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				416F4E071A28A30A00FD5A6B /* PBXTargetDependency */,
+			);
+			name = HxUIWrapperTests;
+			productName = HxUIWrapperTests;
+			productReference = 416F4E051A28A30A00FD5A6B /* HxUIWrapperTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		416F4DEA1A28A30900FD5A6B /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0610;
+				ORGANIZATIONNAME = Visuvio;
+				TargetAttributes = {
+					416F4DF11A28A30900FD5A6B = {
+						CreatedOnToolsVersion = 6.1;
+					};
+					416F4E041A28A30A00FD5A6B = {
+						CreatedOnToolsVersion = 6.1;
+						TestTargetID = 416F4DF11A28A30900FD5A6B;
+					};
+				};
+			};
+			buildConfigurationList = 416F4DED1A28A30900FD5A6B /* Build configuration list for PBXProject "HxUIWrapper" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 416F4DE91A28A30900FD5A6B;
+			productRefGroup = 416F4DF31A28A30900FD5A6B /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				416F4DF11A28A30900FD5A6B /* HxUIWrapper */,
+				416F4E041A28A30A00FD5A6B /* HxUIWrapperTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		416F4DF01A28A30900FD5A6B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				416F4E4E1A28AAA000FD5A6B /* Macros.tpl in Resources */,
+				416F4DFD1A28A30900FD5A6B /* Images.xcassets in Resources */,
+				416F4E4D1A28AAA000FD5A6B /* GenMacro.hx in Resources */,
+				416F4E001A28A30900FD5A6B /* MainMenu.xib in Resources */,
+				416F4E4C1A28AAA000FD5A6B /* DynamicImpl.tpl in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		416F4E031A28A30A00FD5A6B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		416F4DEE1A28A30900FD5A6B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				416F4DFB1A28A30900FD5A6B /* main.m in Sources */,
+				416F4DF91A28A30900FD5A6B /* AppDelegate.mm in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		416F4E011A28A30A00FD5A6B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				416F4E0C1A28A30A00FD5A6B /* HxUIWrapperTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		416F4E071A28A30A00FD5A6B /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 416F4DF11A28A30900FD5A6B /* HxUIWrapper */;
+			targetProxy = 416F4E061A28A30A00FD5A6B /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		416F4DFE1A28A30900FD5A6B /* MainMenu.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				416F4DFF1A28A30900FD5A6B /* Base */,
+			);
+			name = MainMenu.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		416F4E0D1A28A30A00FD5A6B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COPY_PHASE_STRIP = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		416F4E0E1A28A30A00FD5A6B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		416F4E101A28A30A00FD5A6B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libstdc++";
+				COMBINE_HIDPI_IMAGES = YES;
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					"/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include/**",
+					"/Users/ak/Developer/Projects/NativeModule/hx/out/cpp/module/include/**",
+					"/Users/ak/Developer/Haxe/libs/hxcpp/git/include/**",
+				);
+				INFOPLIST_FILE = HxUIWrapper/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					/Users/ak/Developer/Projects/NativeModule/hx/out/cpp/module,
+				);
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		416F4E111A28A30A00FD5A6B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libstdc++";
+				COMBINE_HIDPI_IMAGES = YES;
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					"/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include/**",
+					"/Users/ak/Developer/Projects/NativeModule/hx/out/cpp/module/include/**",
+					"/Users/ak/Developer/Haxe/libs/hxcpp/git/include/**",
+				);
+				INFOPLIST_FILE = HxUIWrapper/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					/Users/ak/Developer/Projects/NativeModule/hx/out/cpp/module,
+				);
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		416F4E131A28A30A00FD5A6B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				COMBINE_HIDPI_IMAGES = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+					"$(inherited)",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = HxUIWrapperTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/HxUIWrapper.app/Contents/MacOS/HxUIWrapper";
+			};
+			name = Debug;
+		};
+		416F4E141A28A30A00FD5A6B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				COMBINE_HIDPI_IMAGES = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = HxUIWrapperTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/HxUIWrapper.app/Contents/MacOS/HxUIWrapper";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		416F4DED1A28A30900FD5A6B /* Build configuration list for PBXProject "HxUIWrapper" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				416F4E0D1A28A30A00FD5A6B /* Debug */,
+				416F4E0E1A28A30A00FD5A6B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		416F4E0F1A28A30A00FD5A6B /* Build configuration list for PBXNativeTarget "HxUIWrapper" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				416F4E101A28A30A00FD5A6B /* Debug */,
+				416F4E111A28A30A00FD5A6B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		416F4E121A28A30A00FD5A6B /* Build configuration list for PBXNativeTarget "HxUIWrapperTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				416F4E131A28A30A00FD5A6B /* Debug */,
+				416F4E141A28A30A00FD5A6B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 416F4DEA1A28A30900FD5A6B /* Project object */;
+}
