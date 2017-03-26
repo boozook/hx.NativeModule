@@ -1,0 +1,8 @@
+common.hxml
+
+-cp test
+-main fzzr.example.test.Main
+
+
+# -x out/test/main
+-neko out/test/main.n

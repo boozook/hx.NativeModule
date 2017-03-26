@@ -1,0 +1,11 @@
+common.lib.hxml
+
+# -D objc
+
+# macOS & iOS defines:
+-D HXCPP_USE_LIBTOOL
+-D STATIC_LINK
+# enable std = libc++ :
+-D HXCPP_CPP11
+-D OBJC_ARC
+# -D IPHONE_VER=9.1

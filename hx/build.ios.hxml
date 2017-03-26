@@ -1,0 +1,33 @@
+common.hxml
+common.ios.hxml
+
+-D ios
+-D iphone
+
+--each
+
+-D HXCPP_ARMV7
+-cpp out/lib/cpp-ios-armv7
+-cmd cp -r ./out/lib/cpp-ios-armv7/liboutput.iphoneos-v7.a ./out/lib/cpp-ios-armv7/hx.iphoneos-v7.a
+
+--next
+-D HXCPP_ARMV6
+-cpp out/lib/cpp-ios-armv6
+-cmd cp -r ./out/lib/cpp-ios-armv6/liboutput.iphoneos.a ./out/lib/cpp-ios-armv6/hx.iphoneos-armv6.a
+
+--next
+-D HXCPP_ARMV7S
+-cpp out/lib/cpp-ios-armv7s
+-cmd cp -r ./out/lib/cpp-ios-armv7s/liboutput.iphoneos-v7s.a ./out/lib/cpp-ios-armv7s/hx.iphoneos-v7s.a
+
+--next
+-D HXCPP_ARM64
+-cpp out/lib/cpp-ios-arm64
+-cmd cp -r ./out/lib/cpp-ios-arm64/liboutput.iphoneos-64.a ./out/lib/cpp-ios-arm64/hx.iphoneos-arm64.a
+
+
+
+# Finally we can create a fat-lib:
+# -cmd lipo -create out/lib/cpp-ios-a*/liboutput.*.a -output out/lib/hx.fat-ios.a
+# or
+# -cmd lipo -create "out/lib/cpp-ios-armv7/liboutput.iphoneos-v7.a" "out/lib/cpp-ios-armv6/liboutput.iphoneos.a" "out/lib/cpp-ios-armv7s/liboutput.iphoneos-v7s.a" "out/lib/cpp-ios-arm64/liboutput.iphoneos-64.a" "out/lib/cpp-ios-sim/liboutput.iphonesim.a" -output "out/lib/hx.fat.a"

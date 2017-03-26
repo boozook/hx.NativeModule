@@ -1,0 +1,44 @@
+common.hxml
+common.lib.hxml
+
+-D mac
+
+# optional:
+-D objc
+-D OBJC_ARC
+-D HX_UTF8_STRINGS
+
+
+
+# see https://github.com/HaxeFoundation/hxcpp/blob/master/toolchain/mac-toolchain.xml#L55-L56
+# see README.md in the /macOS directory
+-D HXCPP_CPP11
+
+
+
+-D HXCPP_USE_LIBTOOL
+# Yes, double damage (really works the second one)
+# Why? - who knows...
+-D STATIC_LINK
+-D static_link
+
+-D HXCPP_CLANG
+
+-D MAC_USE_CURRENT_SDK
+-D MACOSX_DEPLOYMENT_TARGET="10.7"
+
+--each
+
+-D HXCPP_M64
+-cpp out/lib/cpp-mac-64
+-cmd cp -r ./out/lib/cpp-mac-64/liboutput.a ./out/lib/cpp-mac-64/hx.m64.a
+
+--next
+-D HXCPP_M32
+-cpp out/lib/cpp-mac-32
+-cmd cp -r ./out/lib/cpp-mac-32/liboutput.a ./out/lib/cpp-mac-32/hx.m32.a
+
+
+
+# Finally we can create a fat-lib:
+-cmd lipo -create "out/lib/cpp-mac-64/hx.m64.a" "out/lib/cpp-mac-32/hx.m32.a" -output "out/lib/hx.fat-mac.a"

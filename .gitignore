@@ -1,2 +1,5 @@
-xproj/HxUIWrapper/Build
-xproj/HxUIWrapper/DerivedData
+hx/out
+ios/Build
+macos/Build
+ios/DerivedData
+macos/DerivedData

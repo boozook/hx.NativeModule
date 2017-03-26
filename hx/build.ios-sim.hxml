@@ -1,0 +1,7 @@
+common.hxml
+common.ios.hxml
+
+-D iphonesim
+-cpp out/lib/cpp-ios-sim
+-cmd cp -r ./out/lib/cpp-ios-sim/liboutput.iphonesim.a ./out/lib/cpp-ios-sim/hx.iphonesim.a
+# -cmd cp -r ./out/lib/cpp-ios-sim/liboutput-debug.iphonesim.a ./out/lib/cpp-ios-sim/hx-debug.iphonesim.a

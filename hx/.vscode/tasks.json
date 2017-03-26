@@ -1,0 +1,144 @@
+{
+    "version": "2.0.0",
+    "echoCommand": true,
+    "tasks": [
+        // Clean:
+        {
+            "taskName": "clean all",
+            "command": "rm",
+            "args": [
+                "-rf",
+                "${workspaceRoot}/out/"
+            ],
+            "showOutput": "always"
+        },
+        {
+            "taskName": "clean iOS SIM",
+            "command": "rm",
+            "args": [
+                "-rf",
+                "${workspaceRoot}/out/lib/cpp-ios-sim/"
+            ],
+            "showOutput": "silent"
+        },
+        {
+            "taskName": "clean iOS DEVICE",
+            "command": "rm",
+            "args": [
+                "-rf",
+                "${workspaceRoot}/out/lib/cpp-ios-a*"
+            ],
+            "showOutput": "silent"
+        },
+        {
+            "taskName": "clean macOS",
+            "command": "rm",
+            "args": [
+                "-rf",
+                "${workspaceRoot}/out/lib/cpp-mac*"
+            ],
+            "showOutput": "silent"
+        },
+
+
+        // Build iOS:
+        {
+            "taskName": "build iOS-simulator lib",
+            "command": "haxe",
+            "args": [ "build.ios-sim.hxml" ],
+            "isBuildCommand": true,
+            "echoCommand": true,
+            "problemMatcher": [
+                {
+                    "owner": "haxe",
+                    "pattern": {
+                        "regexp": "^(.+):(\\d+): (?:lines \\d+-(\\d+)|character(?:s (\\d+)-| )(\\d+)) : (?:(Warning) : )?(.*)$",
+                        "file": 1, "line": 2, "endLine": 3, "column": 4, "endColumn": 5, "severity": 6, "message": 7
+                    }
+                }
+            ],
+            "showOutput": "always"
+        },
+        {
+            "taskName": "build iOS-generic-device lib",
+            "command": "haxe",
+            "args": [ "build.ios.hxml" ],
+            "isBuildCommand": true,
+            "echoCommand": true,
+            "problemMatcher": {
+                "owner": "haxe",
+                "pattern": {
+                    "regexp": "^(.+):(\\d+): (?:lines \\d+-(\\d+)|character(?:s (\\d+)-| )(\\d+)) : (?:(Warning) : )?(.*)$",
+                    "file": 1, "line": 2, "endLine": 3, "column": 4, "endColumn": 5, "severity": 6, "message": 7
+                }
+            },
+            "showOutput": "always"
+        },
+        {
+            "taskName": "create iOS \"Fat\" liblary",
+            "command": "lipo",
+            "args": [
+                "-create",
+                "${workspaceRoot}/out/lib/cpp-ios-armv7/liboutput.iphoneos-v7.a",
+                "${workspaceRoot}/out/lib/cpp-ios-armv6/liboutput.iphoneos.a",
+                "${workspaceRoot}/out/lib/cpp-ios-armv7s/liboutput.iphoneos-v7s.a",
+                "${workspaceRoot}/out/lib/cpp-ios-arm64/liboutput.iphoneos-64.a",
+                "${workspaceRoot}/out/lib/cpp-ios-sim/liboutput.iphonesim.a",
+                "-output",
+                "${workspaceRoot}/out/lib/hx.fat-ios.a"
+            ],
+            "showOutput": "always",
+            "dependsOn": ["build iOS-simulator lib", "build iOS-generic-device lib"]
+        },
+
+
+        // Build macOS:
+        {
+            "taskName": "build macOS lib",
+            "command": "haxe",
+            "args": [ "build.macos.hxml" ],
+            "isBuildCommand": true,
+            "echoCommand": true,
+            "problemMatcher": [
+                {
+                    "owner": "haxe",
+                    "pattern": {
+                        "regexp": "^(.+):(\\d+): (?:lines \\d+-(\\d+)|character(?:s (\\d+)-| )(\\d+)) : (?:(Warning) : )?(.*)$",
+                        "file": 1, "line": 2, "endLine": 3, "column": 4, "endColumn": 5, "severity": 6, "message": 7
+                    }
+                }
+            ],
+            "showOutput": "always"
+        },
+
+
+        // Build tests:
+        {
+            "taskName": "build tests",
+            "command": "haxe",
+            "args": [ "build.tests.hxml" ],
+            "isBuildCommand": true,
+            "echoCommand": true,
+            "problemMatcher": [
+                {
+                    "owner": "haxe",
+                    "pattern": {
+                        "regexp": "^(.+):(\\d+): (?:lines \\d+-(\\d+)|character(?:s (\\d+)-| )(\\d+)) : (?:(Warning) : )?(.*)$",
+                        "file": 1, "line": 2, "endLine": 3, "column": 4, "endColumn": 5, "severity": 6, "message": 7
+                    }
+                }
+            ],
+            "showOutput": "always"
+        },
+        {
+            "taskName": "run tests",
+            "command": "neko",
+            "args": [
+                "${workspaceRoot}/out/test/main.n"
+            ],
+            "showOutput": "always",
+            "isTestCommand": true,
+            "dependsOn": ["build tests"]
+        }
+    ]
+}

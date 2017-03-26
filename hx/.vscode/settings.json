@@ -1,0 +1,8 @@
+{
+    "haxe.displayConfigurations": [
+        [".vscode/completion.hxml"]
+        // ["build.hxml"],
+        // ["build.tests.hxml"],
+        // ["test.hxml"]
+    ]
+}

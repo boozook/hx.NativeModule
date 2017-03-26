@@ -1,0 +1,9 @@
+# include classes:
+# we can do it via macro:
+--macro include('fzzr.example')
+# --macro include('fzzr.example.test')
+
+# Or specify classes out of hand:
+# fzzr.example.Foo
+# fzzr.example.Bar
+# fzzr.example.test.Main

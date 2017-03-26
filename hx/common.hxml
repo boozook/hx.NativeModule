@@ -1,0 +1,7 @@
+-cp src
+
+# -debug
+-dce full
+# -D dce-debug
+
+# -D HXCPP_VERBOSE
